@@ -1,0 +1,380 @@
+/*******************INICIO FONTES*******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/*******************FIM FONTES*******************/
+
+/*******************INICIO ANIMAÇÃO*******************/
+
+@keyframes anima {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.06);
+    }
+}
+
+/*******************FIM ANIMAÇÃO*******************/
+
+/*******************INICIO CABEÇALHO*******************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(42, 41, 41);
+    height: 100vh;
+    width: 100vw;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(22, 22, 22);
+    align-items: center;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.Logo-header{
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 160px;
+        margin: -20px -10px -20px 40px;
+    }
+    
+    p {
+        font-size: 24px;
+        font-family: "Lexend", sans-serif;
+        color: #12c9cf;
+        font-weight: 500;
+    }
+}
+
+.Lista-header > ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 40px;
+    font-size: 19px;
+    font-family: "Lexend", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    
+    
+    li > a{
+        text-decoration: none;
+        color: inherit;
+        text-shadow: 0px 0px 1px;
+    }
+}
+
+.Lista-header > ul > li:hover{
+    color: #12c9cf
+}
+
+.Conta-header{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    p{
+        font-size: 19px;
+        font-family: "Lexend", sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+    }
+
+    p > a{
+        text-decoration: none;
+        color: inherit;
+        text-shadow: 0px 0px 1px;
+    }
+
+    p:hover {
+        color: #12c9cf;
+    }
+
+    input{
+        font-weight: 500;
+        font-family: "Lexend", sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+        margin-right: 60px;
+        cursor: pointer;
+        border-style: none;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-shadow: 0px 0px 1px;
+       
+    }
+
+    input:hover{
+        background-color: #12c9cf;
+        color: rgb(255, 255, 255);
+        animation-name: anima;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+/*******************FIM CABEÇALHO*******************/
+
+/*******************INICIO CORPO*******************/
+
+.anuncio{
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(28,240,237,1) 0%, rgba(9,219,213,1) 0%, rgba(19,217,241,1) 26%, rgba(32,223,242,1) 52%, rgba(17,241,246,1) 75%, rgba(27,246,229,1) 100%);    font-weight: 400;
+    font-family: "Lexend", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    u{
+        font-weight: 600;
+    }
+}
+
+main{
+    margin: 100px 200px 0px 200px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.pag1{
+    h1{
+        margin-top: 60px;
+        font-size: 18px;
+        color: white;
+        font-family: "Noto Sans", sans-serif;
+    }
+}
+
+.Section-1{
+    display: flex;
+    align-items: center;
+
+    img{
+        filter: drop-shadow(5px 10px 15px #12c9cf);
+        height: 550px;
+        margin-left: 100px;
+        animation-name: anima;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+.Section-1 > .conteudo{
+
+    h2{
+        font-family: "Lexend", sans-serif;
+        font-size: 80px;
+        color: #12c9cf;
+        margin-top: 30px;
+    }
+    p{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
+
+cite{
+    color: #12c9cf;
+    
+    b{
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.pag2{
+    h1{
+        margin-top: 80px;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.Section-2{
+    display: flex;
+    align-items: center;
+
+    img{
+        height: 550px;
+        filter: drop-shadow(5px 10px 15px #12c9cf);
+        margin-left: 100px;
+        animation-name: anima;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+.Section-2 > .conteudo{
+
+    h2{
+        font-family: "Lexend", sans-serif;
+        font-size: 65px;
+        color: #12c9cf;
+        margin-top: 30px;
+    }
+    p{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    ul > li{
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    ul > li > b{
+        color: #12c9cf;
+    }
+}
+
+.pag3{
+    h1{
+        margin-top: 120px;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.Section-3{
+    display: flex;
+    align-items: center;
+
+    img{
+        height: 550px;
+        filter: drop-shadow(5px 10px 15px #12c9cf);
+        margin-left: 100px;
+        animation-name: anima;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+.Section-3 > .conteudo{
+
+    h2{
+        font-family: "Lexend", sans-serif;
+        font-size: 80px;
+        color: #12c9cf;
+        margin-top: 30px;
+    }
+    p{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    ol > li{
+        color: rgb(255, 255, 255);
+        font-size: 23px;
+        margin-top: 10px;
+        
+    }
+    ol>li:hover{
+        color: #12c9cf;
+        cursor: pointer;
+    }
+}
+
+/*******************FIM CORPO*******************/
+
+/*******************INICIO RODAPÉ*******************/
+
+footer{
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 160px;
+}
+
+.img-footer{
+    img{
+        height: 200px;
+        margin: -10px 0px 0px 30px;
+    }
+}
+
+.contato{
+    p{
+        color: #12c9cf;
+        font-family: "Lexend", sans-serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        color: white;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+.email{
+    p{
+        color: #12c9cf;
+        font-family: "Lexend", sans-serif;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+        color: white;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+.PdP > a{
+    text-decoration: none;
+    color: inherit;
+    color: #12c9cf;
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+}
+
+.TeC > a{
+    text-decoration: none;
+    color: inherit;
+    color: #12c9cf;
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    margin-right: 100px;
+}
