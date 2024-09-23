@@ -1,12 +1,12 @@
-/*******************INICIO FONTES*******************/
+/******************* INICIO FONTES *******************/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-/*******************FIM FONTES*******************/
+/******************* FIM FONTES *******************/
 
-/*******************INICIO ANIMAÇÃO*******************/
+/******************* INICIO ANIMAÇÃO *******************/
 
 @keyframes anima {
     0%{
@@ -14,13 +14,22 @@
     }
 
     100%{
-        transform: scale(1.06);
+        transform: scale(1.08);
     }
 }
 
-/*******************FIM ANIMAÇÃO*******************/
+/******************* FIM ANIMAÇÃO *******************/
 
-/*******************INICIO CABEÇALHO*******************/
+/******************* INICIO ITENS JS *******************/
+
+.js-efeito-img, .js-efeito-texto, .js-efeito-pag-titulo, .js-efeito-dow1, .js-efeito-dow2, .js-efeito-dow3, .js-efeito-dow4, .js-efeito-texto1
+.js-efeito-texto2, .js-efeito-texto3, .js-efeito-texto4, .js-efeito-texto5, .js-efeito-texto6, .js-efeito-texto7, .js-efeito-itens{
+    visibility: hidden;
+}
+
+/******************* FIM ITENS JS *******************/
+
+/******************* INICIO CABEÇALHO *******************/
 
 *{
     margin: 0;
@@ -29,9 +38,7 @@
 }
 
 body{
-    background-color: rgb(42, 41, 41);
-    height: 100vh;
-    width: 100vw;
+    background: linear-gradient(90deg, rgba(28,240,237,1) 0%, rgba(31,30,30,1) 0%, rgba(69,69,69,1) 26%, rgba(97,95,95,1) 52%, rgba(69,69,69,1) 75%, rgba(31,30,30,1) 100%);
 }
 
 html{
@@ -79,11 +86,14 @@ header{
         text-decoration: none;
         color: inherit;
         text-shadow: 0px 0px 1px;
+        
     }
 }
 
 .Lista-header > ul > li:hover{
-    color: #12c9cf
+    color: #12c9cf;
+    transform: scale(1.1);
+    transition: .2s;
 }
 
 .Conta-header{
@@ -106,6 +116,8 @@ header{
 
     p:hover {
         color: #12c9cf;
+        transform: scale(1.1);
+        transition: .2s;
     }
 
     input{
@@ -123,23 +135,19 @@ header{
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         text-shadow: 0px 0px 1px;
-       
     }
 
     input:hover{
         background-color: #12c9cf;
-        color: rgb(255, 255, 255);
-        animation-name: anima;
-        animation-duration: 1s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+        color: rgb(0, 0, 0);
+        transform: scale(1.05);
+        transition: .1s;
     }
 }
 
-/*******************FIM CABEÇALHO*******************/
+/******************* FIM CABEÇALHO *******************/
 
-/*******************INICIO CORPO*******************/
+/******************* INICIO CORPO *******************/
 
 .anuncio{
     align-items: center;
@@ -174,8 +182,8 @@ main{
     align-items: center;
 
     img{
-        filter: drop-shadow(5px 10px 15px #12c9cf);
-        height: 550px;
+        filter: drop-shadow(0px 0px 25px #12c9cf);
+        height: 520px;
         margin-left: 100px;
         animation-name: anima;
         animation-duration: 1.8s;
@@ -223,9 +231,10 @@ cite{
     align-items: center;
 
     img{
-        height: 550px;
-        filter: drop-shadow(5px 10px 15px #12c9cf);
+        height: 520px;
+        filter: drop-shadow(0px 0px 25px #12c9cf);
         margin-left: 100px;
+        margin-top: 100px;
         animation-name: anima;
         animation-duration: 1.8s;
         animation-timing-function: ease-in-out;
@@ -272,9 +281,10 @@ cite{
     align-items: center;
 
     img{
-        height: 550px;
-        filter: drop-shadow(5px 10px 15px #12c9cf);
+        height: 520px;
+        filter: drop-shadow(0px 0px 25px #12c9cf);
         margin-left: 100px;
+        margin-top: 100px;
         animation-name: anima;
         animation-duration: 1.8s;
         animation-timing-function: ease-in-out;
@@ -309,9 +319,190 @@ cite{
     }
 }
 
-/*******************FIM CORPO*******************/
+.pag4{
+    h1{
+        margin-top: 120px;
+        font-size: 18px;
+        color: white;
+    }
+}
 
-/*******************INICIO RODAPÉ*******************/
+.texto-instalação{
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.Section-4{
+    margin-bottom: 200px;
+    margin-top: 200px;
+    
+    h2{
+        font-family: "Lexend", sans-serif;
+        font-size: 80px;
+        color: #12c9cf;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    img{
+        height: 230px;
+        margin-top: -40px;
+        margin-bottom: -30px;
+    }
+    
+}
+
+.download{
+    display: flex;
+}
+
+.botoes-pag4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #12c9cf;
+
+    a > input{
+        padding: 10px 30px 10px 30px;
+        border-radius: 20px;
+        font-size: 25px;
+        font-family: "Lexend", sans-serif;
+        border: 0;
+    }
+    a > input:hover{
+        transform: scale(1.05);
+        transition: .2s;
+        cursor: pointer;
+        color: #12c9cf;
+        background-color: black;
+    }
+}
+
+.texto-botao{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    color: #12c9cf;
+    font-family: "Lexend", sans-serif;
+    margin-bottom: 95px;
+}
+
+.seta{
+    display: flex;
+    flex-direction: column;
+    gap: 111px;
+    margin-top: 49px;
+    margin-left: 10px;
+    
+    img{
+        height: 30px;
+        margin-right: 240px;
+    }
+
+}
+
+.opções{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .opc1{
+        display: flex;
+        align-items: center;
+        
+
+        img{
+            height: 24px;
+        }
+        p{
+            font-size: 22px;
+            font-family: "Lexend", sans-serif;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+    }
+    .opc2{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 24px;
+        }
+        p{
+            font-size: 22px;
+            font-family: "Lexend", sans-serif;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+    .opc3{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 24px;
+        }
+        p{
+            font-size: 22px;
+            font-family: "Lexend", sans-serif;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+    .opc4{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 24px;
+        }
+        p{
+            font-size: 22px;
+            font-family: "Lexend", sans-serif;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+    .opc5{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 24px;
+        }
+        p{
+            font-size: 22px;
+            font-family: "Lexend", sans-serif;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+    .opc6{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 24px;
+        }
+        p{
+            font-size: 22px;
+            font-family: "Lexend", sans-serif;
+            color: white;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+/******************* FIM CORPO *******************/
+
+/******************* INICIO RODAPÉ *******************/
 
 footer{
     background-color: rgb(22, 22, 22);
@@ -342,6 +533,11 @@ footer{
         font-family: "Noto Sans", sans-serif;
         font-weight: 500;
         font-size: 20px;
+        display: inline-block;
+    }
+    a:hover{
+        transform: scale(1.05);
+        transition: .2s;
     }
 }
 
@@ -359,6 +555,11 @@ footer{
         font-family: "Noto Sans", sans-serif;
         font-weight: 500;
         font-size: 20px;
+        display: inline-block;
+    }
+    a:hover{
+        transform: scale(1.05);
+        transition: .2s;
     }
 }
 
@@ -370,6 +571,12 @@ footer{
     font-size: 20px;
 }
 
+.PdP:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+
 .TeC > a{
     text-decoration: none;
     color: inherit;
@@ -378,3 +585,10 @@ footer{
     font-size: 20px;
     margin-right: 100px;
 }
+
+.TeC:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/******************* FIM RODAPÉ *******************/
