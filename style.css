@@ -389,7 +389,6 @@ cite{
     margin-left: 40px;
     color: #12c9cf;
     font-family: "Lexend", sans-serif;
-    margin-bottom: 95px;
 }
 
 .seta{
@@ -412,6 +411,7 @@ cite{
     gap: 20px;
 
     .opc1{
+        margin-top: -90px;
         display: flex;
         align-items: center;
         
