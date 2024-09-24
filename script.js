@@ -17,7 +17,7 @@ revelar.reveal('.js-efeito-texto',{
 
 revelar.reveal('.js-efeito-img',{
     duration: 1500, 
-    distance: '100px',
+    distance: '90px',
     origin: 'top',
     delay: 1500
 })
@@ -77,7 +77,7 @@ revelar.reveal('.js-efeito-img-2',{
 
 revelar.reveal('.js-efeito-dow1',{
     duration: 1500, 
-    distance: '90px',
+    distance: '100px',
     origin: 'bottom',
     delay: 500
 })
