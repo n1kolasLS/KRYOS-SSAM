@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="login-anima.js" defer></script>
     <title>KRYOS - Sistema de Segurança Anti-malware</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
 
-    <div class="main-card">
+    <!------------------------------------- ALL LOGIN CARD ------------------------------------->
 
-    <!---------- INICIO LEFT ---------->
+    <div class="ALL">
 
-        <div class="left-card">
-            <div class="titulo-left">
-                <h1>Realize seu login</h1>
-                <h1>com KRYOS</h1>
-            </div>
-            <div class="imagem">
-                <img width="300px" src="../Imgs/Astronauta.png" alt="Astronauta com planetas nos braços.">
-            </div>
-        </div>
+        <!------------------------------------- LEFT LOGIN CARD ------------------------------------->
 
-    <!---------- FIM LEFT ---------->
-
-    <!---------- INICIO RIGHT ---------->
-
-        <div class="right-card">
-            <div class="titulo-right">
-                <h1>CONECTE-SE</h1>
-            </div>
-            <div class="input-right-email">
+        <div class="LEFT">
+            <h1>CONECTAR-SE</h1>
+            <div class="input-left-email">
                 <label for="e-mail">E-MAIL</label>
                 <input type="email" placeholder="Digite seu E-mail..." required id="e-mail">
             </div>
-            <div class="input-right-senha">
+            <div class="input-left-senha">
                 <label for="senha">SENHA</label>
                 <input type="password" placeholder="Digite sua Senha..." required id="senha">
             </div>
-            <div class="input-right-botao">
+            <div class="input-left-botao">
                 <input type="button" value="Conectar">
+            </div>
+            <div class="noLogin">
+                <h4>Não possui um cadastro?</h4>
+                <a href="#">Cadastrar-se</a>
             </div>
         </div>
 
-    <!---------- FIM RIGHT ---------->
 
-    </div><!-- main-card -->
+        <!------------------------------------- RIGHT LOGIN CARD ------------------------------------->
+
+        <div class="RIGHT">
+            <img src="../../assets/Imgs/Cadastro.png" alt="astronauta">
+            <h1>Muito mais segurança e confiabiliade para todos.</h1>
+        </div>
+    </div>
+
+
 
 </body>
 </html>
